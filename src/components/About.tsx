@@ -19,14 +19,13 @@ export default function About() {
             <div className="space-y-6 text-muted text-lg leading-relaxed">
               <p>
                 From iguanas devastating your landscaping to raccoons in the attic
-                to invasive pythons in the Everglades—Florida&apos;s wildlife
-                pressures are unique. We&apos;ve got the expertise to handle it all,
-                from Key Largo to Jacksonville.
+                to invasive pythons—Palm Beach County&apos;s wildlife
+                pressures are unique. We&apos;ve got the expertise to handle it all.
               </p>
               <p>
-                Whether it&apos;s iguanas, raccoons, opossums, tegus, or pythons,
+                Whether it&apos;s iguanas, raccoons, tegus, or pythons,
                 we use proven, humane methods. We&apos;re fully licensed, fully
-                insured, and we know Florida wildlife like the back of our hand.
+                insured, and we know Palm Beach County wildlife like the back of our hand.
               </p>
               <p>
                 When exclusion and prevention aren&apos;t enough, we step in.
@@ -56,11 +55,11 @@ export default function About() {
             },
             {
               stat: "All Species",
-              desc: "Iguanas, raccoons, pythons, opossums & more",
+              desc: "Iguanas, raccoons, pythons & more",
             },
             {
-              stat: "All Florida",
-              desc: "Keys to Palm Beach to North Florida",
+              stat: "Palm Beach County",
+              desc: "Serving all of Palm Beach County",
             },
           ].map((item) => (
             <div key={item.stat} className="text-center">

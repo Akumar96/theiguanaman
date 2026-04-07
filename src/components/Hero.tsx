@@ -34,8 +34,8 @@ export default function Hero() {
         </h1>
 
         <p className="animate-fade-in-up delay-300 text-lg md:text-xl text-white/80 max-w-xl mx-auto mb-12 leading-relaxed">
-          Humane removal of iguanas, raccoons, opossums, pythons, tegus &amp; more
-          across South Florida, the Keys, Palm Beach &amp; North Florida.
+          Humane removal of iguanas, raccoons, pythons, tegus &amp; more
+          across Palm Beach County.
         </p>
 
         <div className="animate-fade-in-up delay-400 flex flex-col sm:flex-row items-center justify-center gap-6">

@@ -9,8 +9,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "IguanaMan | Professional Wildlife Removal Florida",
-  description: "Professional wildlife removal in Florida. Raccoons, iguanas, opossums, pythons, tegus & more. The Keys, Palm Beach, South Florida & North Florida.",
-  keywords: ["wildlife removal Florida", "raccoon removal", "iguana removal", "snake removal", "opossum trapping", "Florida Keys", "Palm Beach wildlife", "professional wildlife control"],
+  description: "Professional wildlife removal in Palm Beach County, Florida. Raccoons, iguanas, pythons, tegus & more.",
+  keywords: ["wildlife removal Palm Beach", "raccoon removal", "iguana removal", "snake removal", "Palm Beach County wildlife", "professional wildlife control"],
 };
 
 export default function RootLayout({

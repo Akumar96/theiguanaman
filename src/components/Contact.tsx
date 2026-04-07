@@ -155,8 +155,7 @@ export default function Contact() {
                   Service Area
                 </span>
                 <span className="text-lg">
-                  Florida Wide &mdash; The Keys, Palm Beach, Broward,
-                  Miami-Dade &amp; North Florida
+                  Palm Beach County, Florida
                 </span>
               </p>
             </div>

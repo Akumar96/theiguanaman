@@ -2,7 +2,7 @@ const services = [
   {
     title: "Wildlife Trapping",
     description:
-      "Humane and professional trapping of raccoons, opossums, pythons, tegus, and other nuisance wildlife. We handle the entire process from assessment to safe removal.",
+      "Humane and professional trapping of raccoons, pythons, tegus, and other nuisance wildlife. We handle the entire process from assessment to safe removal.",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12">
         <path d="M24 4V16M24 4L18 10M24 4L30 10" />
@@ -38,17 +38,16 @@ const services = [
     ),
   },
   {
-    title: "Opossum Control",
+    title: "Iguana Removal",
     description:
-      "Humane trapping and relocation of opossums from porches, garages, and yards. We also address the attractants bringing them to your property.",
+      "Professional capture and removal of iguanas from yards, pools, and structures. We address the damage they cause and prevent future visits.",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12">
-        <ellipse cx="24" cy="26" rx="14" ry="10" />
-        <circle cx="24" cy="14" r="8" />
-        <circle cx="21" cy="12" r="2" />
-        <circle cx="27" cy="12" r="2" />
-        <path d="M10 26C10 26 6 30 6 34" />
-        <path d="M38 26C38 26 42 30 42 34" />
+        <path d="M12 36C12 36 8 28 12 20C16 12 24 8 32 12C36 14 40 20 40 24" />
+        <circle cx="34" cy="14" r="2" />
+        <path d="M12 36L8 40" />
+        <path d="M16 38L14 42" />
+        <path d="M20 39L20 44" />
       </svg>
     ),
   },
