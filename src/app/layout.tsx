@@ -9,7 +9,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "IguanaMan | Professional Wildlife Removal Florida",
-  description: "Professional wildlife removal in Palm Beach County, Florida. Raccoons, iguanas, pythons, tegus & more.",
+  description: "Professional wildlife removal in Palm Beach County, Florida. Iguanas, raccoons, coyotes, muscovy ducks, burmese pythons & feral pigs.",
   keywords: ["wildlife removal Palm Beach", "raccoon removal", "iguana removal", "snake removal", "Palm Beach County wildlife", "professional wildlife control"],
 };
 

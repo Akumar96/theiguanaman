@@ -34,7 +34,7 @@ export default function Hero() {
         </h1>
 
         <p className="animate-fade-in-up delay-300 text-lg md:text-xl text-white/80 max-w-xl mx-auto mb-12 leading-relaxed">
-          Humane removal of iguanas, raccoons, pythons, tegus &amp; more
+          Humane removal of iguanas, raccoons, coyotes, muscovy ducks, burmese pythons &amp; feral pigs
           across Palm Beach County.
         </p>
 

@@ -23,7 +23,7 @@ export default function About() {
                 pressures are unique. We&apos;ve got the expertise to handle it all.
               </p>
               <p>
-                Whether it&apos;s iguanas, raccoons, tegus, or pythons,
+                Whether it&apos;s iguanas, raccoons, coyotes, muscovy ducks, burmese pythons, or feral pigs,
                 we use proven, humane methods. We&apos;re fully licensed, fully
                 insured, and we know Palm Beach County wildlife like the back of our hand.
               </p>
@@ -55,7 +55,7 @@ export default function About() {
             },
             {
               stat: "All Species",
-              desc: "Iguanas, raccoons, pythons & more",
+              desc: "Iguanas, raccoons, coyotes, pythons & more",
             },
             {
               stat: "Palm Beach County",

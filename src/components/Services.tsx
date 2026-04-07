@@ -2,7 +2,7 @@ const services = [
   {
     title: "Wildlife Trapping",
     description:
-      "Humane and professional trapping of raccoons, pythons, tegus, and other nuisance wildlife. We handle the entire process from assessment to safe removal.",
+      "Humane and professional trapping of raccoons, coyotes, feral pigs, burmese pythons, and other nuisance wildlife. We handle the entire process from assessment to safe removal.",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12">
         <path d="M24 4V16M24 4L18 10M24 4L30 10" />
@@ -26,9 +26,9 @@ const services = [
     ),
   },
   {
-    title: "Snake & Tegu Removal",
+    title: "Python & Reptile Removal",
     description:
-      "Safe capture and removal of pythons, tegus, and other reptiles. Experienced handling for dangerous and invasive species.",
+      "Safe capture and removal of burmese pythons and other reptiles. Experienced handling for dangerous and invasive species.",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12">
         <path d="M8 24C8 24 14 16 24 16C34 16 40 24 40 24C40 24 34 32 24 32C14 32 8 24 8 24Z" />
