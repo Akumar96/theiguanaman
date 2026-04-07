@@ -1,6 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const links = [
   { label: "About", href: "#about" },
@@ -9,7 +11,15 @@ const links = [
   { label: "Contact", href: "#contact" },
 ];
 
+const routeLinks = [
+  { label: "Home", href: "/" },
+  { label: "Topics", href: "/topics" },
+  { label: "Info", href: "/info" },
+];
+
 export default function Navigation() {
+  const pathname = usePathname();
+  const isHome = pathname === "/";
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -25,33 +35,35 @@ export default function Navigation() {
     el?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const isSolid = !isHome || scrolled;
+
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
+        isSolid
           ? "bg-white/90 backdrop-blur-md shadow-sm"
           : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-20">
-          <button
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          <Link
+            href="/"
             className={`text-xl font-bold tracking-tight transition-colors ${
-              scrolled ? "text-green-dark" : "text-white"
+              isSolid ? "text-green-dark" : "text-white"
             }`}
           >
             IguanaMan
-          </button>
+          </Link>
 
           {/* Desktop links */}
           <div className="hidden md:flex items-center gap-10">
-            {links.map((link) => (
+            {isHome && links.map((link) => (
               <button
                 key={link.href}
                 onClick={() => handleClick(link.href)}
                 className={`text-sm tracking-wide transition-colors hover:opacity-70 ${
-                  scrolled
+                  isSolid
                     ? "text-foreground/80 hover:text-green-dark"
                     : "text-white/90 hover:text-white"
                 }`}
@@ -59,6 +71,25 @@ export default function Navigation() {
                 {link.label}
               </button>
             ))}
+            {routeLinks
+              .filter((link) => !(link.href === "/" && isHome))
+              .map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={`text-sm tracking-wide transition-colors hover:opacity-70 ${
+                    isSolid
+                      ? "text-foreground/80 hover:text-green-dark"
+                      : "text-white/90 hover:text-white"
+                  } ${
+                    pathname === link.href
+                      ? (isSolid ? "text-green-dark font-medium" : "text-white font-medium")
+                      : ""
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              ))}
           </div>
 
           {/* Mobile hamburger */}
@@ -69,12 +100,12 @@ export default function Navigation() {
           >
             <span
               className={`block w-5 h-0.5 transition-all ${
-                scrolled ? "bg-foreground" : "bg-white"
+                isSolid ? "bg-foreground" : "bg-white"
               } ${mobileOpen ? "rotate-45 translate-y-2" : ""}`}
             />
             <span
               className={`block w-5 h-0.5 transition-all ${
-                scrolled ? "bg-foreground" : "bg-white"
+                isSolid ? "bg-foreground" : "bg-white"
               } ${mobileOpen ? "-rotate-45 -translate-y-2" : ""}`}
             />
           </button>
@@ -85,7 +116,7 @@ export default function Navigation() {
       {mobileOpen && (
         <div className="md:hidden bg-white/95 backdrop-blur-md border-t">
           <div className="px-6 py-6 flex flex-col gap-4">
-            {links.map((link) => (
+            {isHome && links.map((link) => (
               <button
                 key={link.href}
                 onClick={() => handleClick(link.href)}
@@ -93,6 +124,15 @@ export default function Navigation() {
               >
                 {link.label}
               </button>
+            ))}
+            {routeLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-left text-lg text-foreground/80 py-2 hover:text-green-dark transition-colors"
+              >
+                {link.label}
+              </Link>
             ))}
             <a
               href="tel:+15551234567"
